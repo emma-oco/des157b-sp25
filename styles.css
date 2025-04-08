@@ -1,0 +1,166 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+body {
+    background-color: #F2E5D5;
+    color: #294013;
+    transition: all 2s;
+    font-family:Amarante ;
+}
+
+h3{
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    margin-top: -15px;
+}
+
+body.switch {
+    background-color: white;
+    color: #333;
+    font-family: roboto;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    background-image: url(images/artNouv.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    margin-bottom: -130px;
+    margin-left: 40px;
+}
+
+#banner.switch {
+    
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+    background-image: url(images/bauhaus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    flex: 1;
+    border: 1px rgb(235, 235, 235) dashed;
+    margin: 0 .25em;
+    padding: 1em;
+}
+
+main section.switch {
+    flex: 1;
+    border: 4px black solid;
+    margin: 0 .25em;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* section li {
+    padding-left: 1.2em;
+} */
+
+section a {
+    line-height: 1.7em;
+    display: inline-block;
+    /* padding: .5em; */
+    color: #BF3415;
+
+}
+
+section a:hover {
+    background-color: #8f260f;
+    color: #F2E5D5;
+    border-radius: 25px;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: #BF3415;
+    color: #F2E5D5;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #8f260f;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: white;
+    border-color: #333;
+    border-width: 4px;
+    border-radius: 0px;
+    color: black;
+}
+
+button.switch:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
