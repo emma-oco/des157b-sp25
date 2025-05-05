@@ -7,80 +7,19 @@
 
     <title>Cat</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+     <!-- Normalize CSS for browser compatability -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+     <!-- My Styles -->
+     <link href="styles.css" rel="stylesheet">
 
-    <style>
-        #catVideo{
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;   
-        }
+     <!-- Meta tag for mobile support -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+     <!-- My Script -->
+     <script src="script.js" defer></script>
+    
 
-        i{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 36px;
-            color: white;
-        }
-
-        i:hover{
-            cursor: pointer;
-        }
-
-        body{
-            position: relative;
-        }
-
-        #poem{
-            position: absolute;
-            left: 30px;
-            bottom: -900px;
-        }
-
-        #text{
-            background-color: white;
-            color: rgb(45, 0, 45);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 5em;
-            padding: 20px;
-            margin: 0;
-        }
-
-        #image{
-            background-color: white;
-            color: rgb(45, 0, 45);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 5em;
-            padding: 20px;
-            padding-top: 0;
-            margin: 0;
-            margin-top: -30px;
-        }
-
-        .hidden{
-            opacity: 0;
-        }
-
-        .showing{
-            animation: fadeIn 1s;
-        }
-
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;} 
-        }
-
-        @keyframes fadeOut {
-            0% {opacity: 1;}
-            100% {opacity: 0;} 
-        }
-
-
-    </style>
 </head>
 <body>
 
@@ -102,40 +41,7 @@
 
 
     <script>
-        (function(){
-            'use strict';
-
-            const fs = document.querySelector('.fa-expand');
-
-            fs.addEventListener('click', function(){
-                if(!document.fullscreenElement){
-                    document.documentElement.requestFullscreen();
-                } else {
-                    document.exitFullscreen();
-                }
-            })
-
-            const poem = document.querySelector('#poem');
-            const text = document.querySelector('#text');
-            const image = document.querySelector('#image');
-            const intervalD = setInterval(checkTime, 1000);
-
-            function checkTime(){
-                if (1< catVideo.currentTime && catVideo.currentTime < 12){
-                    text.className = "showing";
-                } else {
-                    text.className = "hidden";
-                }
-
-                if (5< catVideo.currentTime && catVideo.currentTime <12){
-                    image.className = "showing";
-                } else {
-                    image.className = "hidden";
-                }
-            }
-
-
-        })();
+        
     </script>
 
     
