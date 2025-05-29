@@ -1,87 +1,23 @@
-[
-    {
-      "date": "Sat, Apr 6",
-      "exercise": "Walk"
-    },
-    {
-      "date": "Fri, Apr 12",
-      "exercise": "Walk"
-    },
-    {
-      "date": "Fri, Apr 18",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Sat, Apr 26",
-      "exercise": "Walk"
-    },
-    {
-      "date": "Mon, Apr 14",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Tue, Apr 15",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Wed, Apr 16",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Mon, Apr 21",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Tue, Apr 22",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Wed, Apr 23",
-      "exercise": "Hot Pilates"
-    },
-    {
-      "date": "Sat, Apr 26",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Mon, Apr 28",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Tue, Apr 29",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Wed, Apr 30",
-      "exercise": "Hot Pilates"
-    },
-    {
-      "date": "Thu, May 1",
-      "exercise": "Walk"
-    },
-    {
-      "date": "Fri, May 2",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Mon, May 5",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Tue, May 6",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Wed, May 7",
-      "exercise": "Hot Vinyasa"
-    },
-    {
-      "date": "Fri, May 9",
-      "exercise": "Hot Pilates"
-    },
-    {
-      "date": "Sat, May 10",
-      "exercise": "Walk"
-    }
-  ]
-  
+{
+  "apr-6": 1,
+  "apr-12": 1,
+  "apr-18": 2,
+  "apr-26-1": 1,
+  "apr-14": 2,
+  "apr-15": 2,
+  "apr-16": 2,
+  "apr-21": 2,
+  "apr-22": 2,
+  "apr-23": 3,
+  "apr-26-2": 2,
+  "apr-28": 2,
+  "apr-29": 2,
+  "apr-30": 3,
+  "may-1": 1,
+  "may-2": 2,
+  "may-5": 2,
+  "may-6": 2,
+  "may-7": 2,
+  "may-9": 3,
+  "may-10": 1
+}
