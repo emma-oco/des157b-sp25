@@ -15,27 +15,32 @@
 
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
+
+    <!-- gsap -->   
+     <script src="gsap/gsap.min.js"></script>
+
+    <!-- My Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     
     <title>Capstone</title>
        
 </head>
 <body>
-    <h1>Dreams for the Future</h1>
+    <section id="openingSection">
+        <h1>Dreams for the Future</h1>
+    </section>
     <section id="section1">
-        <p>Do dreams start before you can dream for yourself with your parents' goals for you?</p>
-        <!-- <form class="fm">
-            <input type="button" id="yes1" name="parents_dreams" value="Yes">
-            <label for="yes1">Yes</label>
-            <input type="button" id="no1" name="parents_dreams" value="No">
-            <label for="no1">No</label>
-        </form> -->
-        <button type="button" id="button1">Yes</button>
-        <button type="button">No</button>
+        <p>Do dreams start before you can dream for yourself <br> with your parents' goals for you?</p>
+        <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
+        <button type="button" class="button1" onclick="button1vote('No')">No</button>
     </section>
     <section id="section2">
-        <p>Or do they start even before that with society's preconceived notions of who you should be?</p>
-        <button type="button">Yes</button>
-        <button type="button">No</button>
+        <p>Or do they start even before that with society's preconceived <br>notions of who you should be?</p>
+        <button type="button" class="button2" onclick="button2vote('Yes')">Yes</button>
+        <button type="button" class="button2" onclick="button2vote('No')">No</button>
     </section>
     <section id="section3">
         <p>What were your dreams from the five to twelve years old?</p>
@@ -48,7 +53,8 @@
         </ul>
     </section>
     <section>
-
+        <p id="percentDisplay">here</p>
+        <p id="percentDisplay2">here</p>
     </section>
     
 </body>
