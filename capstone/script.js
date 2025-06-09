@@ -4,6 +4,9 @@ Parse.serverURL = "https://parseapi.back4app.com/";
 
 const button1 = document.querySelector(".button1");
 const button2 = document.querySelector(".button2");
+const button3 = document.querySelector(".button3");
+const button4 = document.querySelector(".button4");
+const button5 = document.querySelector(".button5");
 
 /* BUTTON #1 ONLY */
 async function button1vote(answer) {
@@ -115,7 +118,7 @@ async function button2vote(answer2) {
 /* BUTTON 3 ONLY */
 async function button3vote(answer3) {
     const myNewObject3 = new Parse.Object('CapstoneButton3');
-    myNewObject3.set('button3', answer);
+    myNewObject3.set('button3', answer3);
     try {
       const result = await myNewObject3.save();
       console.log('CapstoneButton3 vote save', result);
@@ -267,7 +270,7 @@ document.fonts.ready.then(() => {
 /* BUTTON 4 ONLY */
 async function button4vote(answer4) {
     const myNewObject4 = new Parse.Object('CapstoneButton4');
-    myNewObject4.set('button4', answer);
+    myNewObject4.set('button4', answer4);
     try {
       const result = await myNewObject4.save();
       console.log('CapstoneButton4 vote save', result);
@@ -322,7 +325,7 @@ async function button4vote(answer4) {
   /* BUTTON 5 ONLY */
 async function button5vote(answer5) {
     const myNewObject5 = new Parse.Object('CapstoneButton5');
-    myNewObject5.set('button5', answer);
+    myNewObject5.set('button5', answer5);
     try {
       const result = await myNewObject5.save();
       console.log('CapstoneButton5 vote save', result);
