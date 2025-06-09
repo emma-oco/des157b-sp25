@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--/ /-------- Normalize CSS --------/ /-->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+     <!--/ /-------- Load Parse Library --------/ /-->
+     <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+     <!-- My Script -->
+    <script src="script.js" defer></script>
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- gsap -->   
+     <script src="minified/gsap.min.js"></script>
+     <script src="minified/ScrollTrigger.min.js"></script>
+     <script src="minified/SplitText.min.js"></script>
+
+    <!-- My Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <title>Capstone</title>
+       
+</head>
+<body>
+    <section id="openingSection" class="hide">
+        <h1>Dreams for the Future</h1>
+    </section>
+    <section id="section1" class="hide">
+        <div class="container"> 
+            <p class="split">Do dreams start before you can dream for yourself <br> with your parents' goals for you?</p>
+        </div> 
+        <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
+        <button type="button" class="button1" onclick="button1vote('No')">No</button>
+        <img src="drawings/mother.svg" alt="mother with child" id="mom">
+        <img src="drawings/small_bubble1.svg" alt="bubble" id="bubble1">
+        <img src="drawings/small_bubble2.svg" alt="bubble" id="bubble2">
+        <img src="drawings/small_bubble3.svg" alt="bubble" id="bubble3">
+        <img src="drawings/small_bubble4.svg" alt="bubble" id="bubble4">
+    </section>
+
+    <section id="section2" class="hide">
+        <div class="container">
+        <p class="split">Or do they start even before that with society's preconceived <br>notions of who you should be?</p>
+        </div>
+        <button type="button" class="button2" onclick="button2vote('Yes')">Yes</button>
+        <button type="button" class="button2" onclick="button2vote('No')">No</button>
+        <img src="drawings/cake.svg" alt="cake" id="cake">
+    </section>
+    <section id="section3" class="hide">
+        <div class="container">
+            <p class="split">What were your dreams from the five to twelve years old?</p>
+       </div>
+        <ul>
+            <li><button type="button" class="button3" onclick="button3vote('opt1')">Science Career</button></li>
+            <li><button type="button" class="button3" onclick="button3vote('opt2')">Arts Career</button></li>
+            <li><button type="button" class="button3" onclick="button3vote('opt3')">Service Industry Career</button></li>
+            <li><button type="button" class="button3" onclick="button3vote('opt4')">Make-Believe Career</button></li>
+            <li><button type="button" class="button3" onclick="button3vote('opt5')">Other</button></li>
+        </ul>
+        <img src="drawings/boyAndGirl.svg" alt="boyAndGirl" id="boyAndGirl">
+    </section>
+    <section>
+        <p>Do you think your five to twelve year old self would think you have acheived your dreams if they saw you now?</p>
+        <p>Are you currently satisfied with where you are in life?</p>
+    </section>
+
+
+
+    <section class="hide">
+        <p id="percentDisplay">here</p>
+        <p id="percentDisplay2">here</p>
+        <p id="opt1Display">here</p>
+    </section>
+    
+</body>
+</html>

@@ -10,14 +10,18 @@
      <!--/ /-------- Load Parse Library --------/ /-->
      <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
+         <!-- gsap -->   
+    <script src="minified/gsap.min.js"></script>
+    <!-- SplitText (use your own Club file or CodePen’s built-in) -->
+    <script src="minified/ScrollTrigger.min.js"></script>
+    <script src="minified/SplitText.min.js"></script>
+
      <!-- My Script -->
     <script src="script.js" defer></script>
 
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
 
-    <!-- gsap -->   
-     <script src="gsap/gsap.min.js"></script>
 
     <!-- My Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,33 +33,64 @@
        
 </head>
 <body>
-    <section id="openingSection">
-        <h1>Dreams for the Future</h1>
-    </section>
-    <section id="section1">
-        <p>Do dreams start before you can dream for yourself <br> with your parents' goals for you?</p>
-        <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
-        <button type="button" class="button1" onclick="button1vote('No')">No</button>
-    </section>
-    <section id="section2">
-        <p>Or do they start even before that with society's preconceived <br>notions of who you should be?</p>
-        <button type="button" class="button2" onclick="button2vote('Yes')">Yes</button>
-        <button type="button" class="button2" onclick="button2vote('No')">No</button>
-    </section>
-    <section id="section3">
-        <p>What were your dreams from the five to twelve years old?</p>
-        <ul>
-            <li><button type="button">option 1</button></li>
-            <li><button type="button">option 2</button></li>
-            <li><button type="button">option 3</button></li>
-            <li><button type="button">option 4</button></li>
-            <li><button type="button">option 5</button></li>
-        </ul>
-    </section>
-    <section>
-        <p id="percentDisplay">here</p>
-        <p id="percentDisplay2">here</p>
-    </section>
-    
+
+   <!--  <div class="underline long"></div> -->
+
+    <div class="horizontal-container">
+        <section id="openingSection" class="hide panel">
+            <div class="container">
+                <h1 class="split">Dreams of the <u>Future</u> <br>Start in the Past</h1>
+                <div class="underline long"></div>
+            </div>
+        </section>
+
+
+        <section class="hide panel">
+            <p>What’s the first dream you remember having?</p>
+
+        </section>
+
+        <section id="section1" class="hide panel">
+            <div class="container"> 
+                <p class="split">Do dreams start before you can dream for yourself <br> with your parents' goals for you?</p>
+            </div> 
+            <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
+            <button type="button" class="button1" onclick="button1vote('No')">No</button>
+        </section>
+
+        <section id="section2" class="hide panel">
+            <div class="container">
+            <p class="split">Or do they start even before that with society's preconceived <br>notions of who you should be?</p>
+            </div>
+            <button type="button" class="button2" onclick="button2vote('Yes')">Yes</button>
+            <button type="button" class="button2" onclick="button2vote('No')">No</button>
+            <!-- <img src="drawings/cake.svg" alt="cake" id="cake"> -->
+        </section>
+        <section id="section3" class="hide panel">
+            <div class="container">
+                <p class="split">What were your dreams from the five to twelve years old?</p>
+        </div>
+            <ul>
+                <li><button type="button" class="button3" onclick="button3vote('opt1')">Science Career</button></li>
+                <li><button type="button" class="button3" onclick="button3vote('opt2')">Arts Career</button></li>
+                <li><button type="button" class="button3" onclick="button3vote('opt3')">Service Industry Career</button></li>
+                <li><button type="button" class="button3" onclick="button3vote('opt4')">Make-Believe Career</button></li>
+                <li><button type="button" class="button3" onclick="button3vote('opt5')">Other</button></li>
+            </ul>
+            <!-- <img src="drawings/boyAndGirl.svg" alt="boyAndGirl" id="boyAndGirl"> -->
+        </section>
+        <section class="hide panel">
+            <p>Do you think your five to twelve year old self would think you have acheived your dreams if they saw you now?</p>
+            <p>Are you currently satisfied with where you are in life?</p>
+        </section>
+
+
+
+        <section class="hide panel">
+            <p id="percentDisplay">here</p>
+            <p id="percentDisplay2">here</p>
+            <p id="opt1Display">here</p>
+        </section>
+    </div>    
 </body>
 </html>
