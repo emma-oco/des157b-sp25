@@ -1,7 +1,7 @@
 body{
     background: #393734;
     color: #F2E9D8;
-    font: PT sans;
+    font-family: "PT Serif", serif;
     overflow-x: hidden;
     overscroll-behavior: none;
     height: 100vh;
@@ -177,7 +177,7 @@ section{
     }
 
     #section5 .container{
-        margin-top: 0x;
+        margin-top: 0;
         margin-top: 100px;
     }
 
