@@ -234,7 +234,6 @@ document.fonts.ready.then(() => {
         start: "top top",
         end: "+=5000", // depends on your horizontal scroll length
         scrub: true,
-        markers:true,
       },
       scaleX: 0,
       transformOrigin: "left center",
