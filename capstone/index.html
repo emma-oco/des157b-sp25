@@ -37,60 +37,112 @@
    <!--  <div class="underline long"></div> -->
 
     <div class="horizontal-container">
-        <section id="openingSection" class="hide panel">
+        <section id="openingSection" class="panel">
             <div class="container">
                 <h1 class="split">Dreams of the <u>Future</u> <br>Start in the Past</h1>
                 <div class="underline long"></div>
             </div>
         </section>
 
-
-        <section class="hide panel">
+<!-- 
+        <section id="section0" class="panel">
             <p>What’s the first dream you remember having?</p>
 
-        </section>
+        </section> -->
 
-        <section id="section1" class="hide panel">
+        <section id="section1" class="panel">
+    
             <div class="container"> 
                 <p class="split">Do dreams start before you can dream for yourself <br> with your parents' goals for you?</p>
+                <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
+                <button type="button" class="button1" onclick="button1vote('No')">No</button>
             </div> 
-            <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
+
+<!--             <button type="button" class="button1" onclick="button1vote('Yes')">Yes</button>
             <button type="button" class="button1" onclick="button1vote('No')">No</button>
+ -->
+            <img src="photos/babyIMG1.jpg" alt="baby" id="baby1">
+            <img src="photos/babyIMG2.jpg" alt="baby" id="baby2">
         </section>
 
-        <section id="section2" class="hide panel">
+        <section id="section2" class="panel">
             <div class="container">
             <p class="split">Or do they start even before that with society's preconceived <br>notions of who you should be?</p>
-            </div>
             <button type="button" class="button2" onclick="button2vote('Yes')">Yes</button>
             <button type="button" class="button2" onclick="button2vote('No')">No</button>
-            <!-- <img src="drawings/cake.svg" alt="cake" id="cake"> -->
+            </div>
+            
+            <img src="photos/babyIMG3.jpg" alt="baby" id="baby3">
+            <img src="photos/babyIMG4.jpg" alt="baby" id="baby4">
         </section>
-        <section id="section3" class="hide panel">
+        <section id="section3" class="panel">
             <div class="container">
-                <p class="split">What were your dreams from the five to twelve years old?</p>
-        </div>
-            <ul>
-                <li><button type="button" class="button3" onclick="button3vote('opt1')">Science Career</button></li>
-                <li><button type="button" class="button3" onclick="button3vote('opt2')">Arts Career</button></li>
-                <li><button type="button" class="button3" onclick="button3vote('opt3')">Service Industry Career</button></li>
-                <li><button type="button" class="button3" onclick="button3vote('opt4')">Make-Believe Career</button></li>
-                <li><button type="button" class="button3" onclick="button3vote('opt5')">Other</button></li>
-            </ul>
+                <p class="split">Did you have a dream of what your future would look like when you were young?</p>
+                <button type="button" class="button3" onclick="button3vote('Yes')">Yes</button>
+                <button type="button" class="button3" onclick="button3vote('No')">No</button>
+<!--                 <ul>
+                    <li><button type="button" class="button3" onclick="button3vote('opt1')">Science Career</button></li>
+                    <li><button type="button" class="button3" onclick="button3vote('opt2')">Arts Career</button></li>
+                    <li><button type="button" class="button3" onclick="button3vote('opt3')">Service Industry Career</button></li>
+                    <li><button type="button" class="button3" onclick="button3vote('opt4')">Make-Believe Career</button></li>
+                    <li><button type="button" class="button3" onclick="button3vote('opt5')">Other</button></li>
+                </ul> -->
+                <img src="photos/babyIMG5.jpg" alt="baby" id="baby5">
+            </div>
+            
             <!-- <img src="drawings/boyAndGirl.svg" alt="boyAndGirl" id="boyAndGirl"> -->
         </section>
-        <section class="hide panel">
-            <p>Do you think your five to twelve year old self would think you have acheived your dreams if they saw you now?</p>
-            <p>Are you currently satisfied with where you are in life?</p>
+        <section class="panel" id="section4">
+            <img src="photos/babyIMG6.jpg" alt="baby" id="baby6">
+            <img src="photos/babyIMG8.jpg" alt="baby" id="baby8">
+            <img src="photos/babyIMG7.jpg" alt="baby" id="baby7">
+        </section>    
+
+        <section class="panel" id="section5">
+            <img src="photos/babyIMG10.jpg" alt="baby" id="baby10">
+            <div class="container">
+                <p>Do you think your younger self would think you<br> have acheived your dreams if they saw you now?</p>
+                <button type="button" class="button4" onclick="button4vote('Yes')">Yes</button>
+                <button type="button" class="button4" onclick="button4vote('No')">No</button>
+            </div>
+            
+        </section>    
+
+
+        <section class="panel" id="section6">
+            <div class="container">
+                <p>Do you feel fulfilled by the dreams and goals you’ve accomplished?</p>
+                <button type="button" class="button5" onclick="button5vote('Yes')">Yes</button>
+                <button type="button" class="button5" onclick="button5vote('No')">No</button>
+            </div>
+            <img src="photos/babyIMG9.jpg" alt="baby" id="baby9">
         </section>
+ </div>  
 
 
-
-        <section class="hide panel">
+        <section class="stats" id="stats1">
             <p id="percentDisplay">here</p>
-            <p id="percentDisplay2">here</p>
-            <p id="opt1Display">here</p>
+            
+            
         </section>
-    </div>    
+
+        <section class="stats" id="stats2">
+            <p id="percentDisplay2">here</p>
+
+        </section>
+
+        <section class="stats" id="stats3">
+            <p id="percentDisplay3">here</p>
+        </section>
+
+        <section class="stats" id="stats4">
+            <p id="percentDisplay4">here</p>
+        </section>
+
+        <section class="stats" id="stats5">
+            <p id="percentDisplay5">here</p>
+        </section>
+
+     
 </body>
 </html>
