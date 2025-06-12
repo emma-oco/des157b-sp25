@@ -145,11 +145,14 @@ button {
     color: #F2E5D5;
     border: 1px solid transparent;
     border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 button:hover {
     background-color: #8f260f;
     cursor: pointer;
+    
 }
 
 button.switch {
@@ -163,4 +166,9 @@ button.switch {
 button.switch:hover {
     background-color: #333;
     color: rgb(235, 235, 235)
+}
+
+ul li a{
+    padding-left: 15px;
+    padding-right: 15px;
 }
